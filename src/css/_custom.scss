@@ -283,7 +283,17 @@ body {
     position: absolute;
     left: 20px;
     top: 0;
-
+    .lexicon-icon-ar-sa{
+        background: url(../images/marocFlag.png);
+        background-repeat: no-repeat;
+        margin-top: 5px;
+        rect {
+            display: none;
+        }
+        path {
+            display: none;
+        }
+    }
 }
 .lang-selector-bar .portlet-title-text, .portlet-title .icon {
     display: none;
