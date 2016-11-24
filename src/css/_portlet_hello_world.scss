@@ -1,0 +1,26 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 23 nov. 2016, 22:06:18
+    Author     : mabsalhi.sos
+*/
+
+.portlet-hello-world .portlet-content {
+	background: url(../images/portlet_hello_world/welcome_bg.jpg) top;
+	background-size: cover;
+	min-height: 390px;
+	padding-top: 40px;
+	text-align: center;
+
+	.portlet-title-text {
+		color: $bright-color;
+		font-size: 300%;
+	}
+
+	.portlet-body {
+		padding: 0 20%;
+	}
+}
