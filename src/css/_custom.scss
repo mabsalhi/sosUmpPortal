@@ -15,9 +15,11 @@ and open the template in the editor.
     Author     : mabsalhi.sos
 */
 @import "portlet_hello_world";
-
+@import "textfonts";
 body {
     background-color: $bg-color;
+    font-family: "Amiri";
+    font-size: 14px;
 }
 
 .container-fluid-1280 .row {
@@ -279,6 +281,7 @@ body {
     }
 }
 
+
 .lang-selector-bar {
     position: absolute;
     left: 20px;
@@ -286,7 +289,7 @@ body {
     .lexicon-icon-ar-sa{
         background: url(../images/marocFlag.png);
         background-repeat: no-repeat;
-        margin-top: 5px;
+        margin-top: 3px;
         rect {
             display: none;
         }
@@ -297,7 +300,6 @@ body {
 }
 .lang-selector-bar .portlet-title-text, .portlet-title .icon {
     display: none;
-
 }
 .lang-selector-bar .portlet-decorate .portlet-content{
     border-style: none; 
@@ -305,3 +307,7 @@ body {
 .lang-selector-bar .portlet-title {
     height: 1px;
 }
+.lang-selector-bar .portlet-content {
+    padding: 0px 10px 10px;
+}
+

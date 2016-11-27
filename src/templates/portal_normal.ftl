@@ -30,7 +30,7 @@
                                     .lang-selector-bar .portlet-title-text, .portlet-title .icon { display: none; }
                                     .lang-selector-bar .portlet-decorate .portlet-content{ border-style: none; }
                                     .lang-selector-bar .portlet-title { height: 1px;}
-                                    .lang-selector-bar .lexicon-icon-ar-sa { background: url(http://localhost:8080/o/sos-ump-theme/images/marocFlag.png); background-repeat: no-repeat; margin-top: 5px; }
+                                    .lang-selector-bar .lexicon-icon-ar-sa { background: url(http://localhost:8080/o/sos-ump-theme/images/marocFlag.png); background-repeat: no-repeat; margin-top: 3px; }
                                     .lang-selector-bar .lexicon-icon-ar-sa rect { display: none; }
                                     .lang-selector-bar .lexicon-icon-ar-sa path {display: none;}
                                 </style>
@@ -67,7 +67,14 @@
 			<#include "${full_templates_path}/navigation.ftl" />
 		</div>
 	</header>
-
+        <section class="container-fluid-1280" id="breadCrumb">
+            
+            <@liferay_portlet["runtime"]
+		defaultPreferences=default_preferences
+		portletProviderAction=portletProviderAction.VIEW
+                portletProviderClassName="com.liferay.portal.kernel.servlet.taglib.ui.BreadcrumbEntry"
+/>
+        </section>
 	<section class="container-fluid-1280" id="content">
 		<h1 class="hide-accessible">${the_title}</h1>
 
