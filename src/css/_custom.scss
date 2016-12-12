@@ -14,12 +14,14 @@ and open the template in the editor.
     Created on : 23 nov. 2016, 22:06:18
     Author     : mabsalhi.sos
 */
+
 @import "portlet_hello_world";
 @import "textfonts";
 body {
     background-color: $bg-color;
-    font-family: "Amiri";
+    font-family: 'Cairo', sans-serif;
     font-size: 14px;
+    margin: 0px;
 }
 
 .container-fluid-1280 .row {
@@ -42,7 +44,21 @@ body {
     .portlet-topper {
         z-index: 1;
     }
-
+    .portlet-content{
+        padding: 0px;
+        padding-top: 3px;
+    }
+    .portlet{
+        padding: 0px;
+    }
+    .icon-user{
+        color: $solid-color;
+    }
+    
+    .text-default{
+        color: $solid-color;
+    }
+    
     .navbar-collapse {
         @include sm {
             padding-right: 4px;
@@ -52,7 +68,7 @@ body {
     .navbar-toggle {
         margin: 12px 0 12px 6px;
     }
-
+    
     #heading .site-name {
         color: $solid-color;
         font-size: 150%;
@@ -283,9 +299,7 @@ body {
 
 
 .lang-selector-bar {
-    position: absolute;
-    left: 20px;
-    top: 0;
+    
     .lexicon-icon-ar-sa{
         background: url(../images/marocFlag.png);
         background-repeat: no-repeat;
@@ -310,4 +324,15 @@ body {
 .lang-selector-bar .portlet-content {
     padding: 0px 10px 10px;
 }
+#banner .user-personal-bar .sign-in > a {
+    padding: 0px;
+}
+#banner .portlet-decorate .portlet-content {
+    background: #FFF;
+    border-style: none;
+    word-wrap: break-word;
+}
 
+.text-default{
+        color: $solid-color;
+    }
